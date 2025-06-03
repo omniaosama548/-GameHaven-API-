@@ -1,18 +1,22 @@
-import express from 'express';
-import dotenv from 'dotenv';
-import connectDB from './config/db.mjs'
-import morgan from 'morgan';
-
+import express from "express";
+import dotenv from "dotenv";
+import connectDB from "./config/db.mjs";
+import morgan from "morgan";
+import authRouter from "./routes/authRoute.mjs";
+import globalErrorHandler from "./controllers/errorController.mjs";
 
 dotenv.config();
-connectDB();
 
 const app = express();
 
 app.use(express.json());
-app.use(morgan('dev'));
+app.use(morgan("dev"));
+app.use(express.urlencoded({ extended: true }));
+app.use("/api/auth", authRouter);
 
+app.use(globalErrorHandler);
 
+connectDB();
 const PORT = process.env.PORT || 8080;
 app.listen(PORT, () => {
   console.log(`Server running on http://localhost:${PORT}`);
