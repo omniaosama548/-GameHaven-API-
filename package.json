@@ -5,7 +5,6 @@
   "type": "module",
   "scripts": {
     "dev": "nodemon app.mjs"
-    
   },
   "keywords": [],
   "author": "",
