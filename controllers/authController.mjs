@@ -23,7 +23,7 @@ export const loginController = catchAsync(async (req, res, next) => {
   // 3) if everything is OK , send token to the client
 
   const token = jwt.sign(
-    { email: user.email, _id: user._id, role: "user" },
+    { email: user.email, _id: user._id, role: user.role },
     JWT_SECRET,
     {
       expiresIn: "12h",
