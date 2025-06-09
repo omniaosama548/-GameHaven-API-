@@ -1,0 +1,182 @@
+[
+  {
+    "title": "The Witcher 3: Wild Hunt",
+    "description": "Epic fantasy RPG adventure in a vast open world.",
+    "platform": "PC",
+    "genre": "RPG",
+    "price": 39.99,
+    "stock": 50,
+    "category": "RPG",
+    "coverImage": "https://www.thewitcher.com/_next/image?url=https%3A%2F%2Fstatic.cdprojektred.com%2Fcms.cdprojektred.com%2F16x9_big%2Ffcaa0ba91e2368e2aef8c0d556692307768fad49-1920x1080.jpg&w=1920&q=75"
+  },
+  {
+    "title": "FIFA 24",
+    "description": "Realistic football simulation game.",
+    "platform": "PlayStation",
+    "genre": "Sports",
+    "price": 59.99,
+    "stock": 100,
+    "category": "Sports",
+    "coverImage": "https://drop-assets.ea.com/images/1Fi00oSsotzKRsfqblQIr5/b4ce1b1ced51349d2fc944ab3af470e7/fc24-standard-edition-hero-xl-16x9.jpg?im=AspectCrop=(4,3),xPosition=0.9914346895074947,yPosition=0.4234062797335871&q=80&w=2382"
+  },
+  {
+    "title": "Assassin's Creed Valhalla",
+    "description": "Viking-themed action-adventure game.",
+    "platform": "PC",
+    "genre": "Action",
+    "price": 49.99,
+    "stock": 70,
+    "category": "Action",
+    "coverImage": "https://cdn.mobygames.com/covers/9214681-assassins-creed-valhalla-playstation-5-front-cover.jpg"
+  },
+  {
+    "title": "NBA 2K24",
+    "description": "Basketball sports simulation.",
+    "platform": "Xbox",
+    "genre": "Sports",
+    "price": 59.99,
+    "stock": 80,
+    "category": "Sports",
+    "coverImage": "https://cdn.prgloo.com/media/d4abdf12a5b34fcc86266dfa344ae992.jpg?width=1200&height=1800"
+  },
+  {
+    "title": "Horizon Zero Dawn",
+    "description": "Action RPG in a futuristic world of machines.",
+    "platform": "PlayStation",
+    "genre": "Adventure",
+    "price": 34.99,
+    "stock": 60,
+    "category": "Adventure",
+    "coverImage": "https://cdn.mobygames.com/21514d1a-ab8b-11ed-91fb-02420a00019f.webp"
+  },
+  {
+    "title": "Gran Turismo 7",
+    "description": "Realistic car racing simulator.",
+    "platform": "PlayStation",
+    "genre": "Racing",
+    "price": 69.99,
+    "stock": 90,
+    "category": "Racing",
+    "coverImage": "https://wallpapercat.com/w/middle-retina/2/3/d/13240-3840x2160-desktop-4k-gran-turismo-7-background-image.jpg"
+  },
+  {
+    "title": "Call of Duty: Modern Warfare II",
+    "description": "Military first-person shooter.",
+    "platform": "PC",
+    "genre": "Action",
+    "price": 59.99,
+    "stock": 120,
+    "category": "Action",
+    "coverImage": "https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/3bb7c747-20e6-412c-bd48-7d02131c61ab/dfz7bfp-b58830b3-4326-46a4-8827-92b9bedecb57.jpg/v1/fill/w_888,h_900,q_70,strp/august_rush_2007_ost_cover_by_psycosid09_dfz7bfp-pre.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9MTAzNyIsInBhdGgiOiJcL2ZcLzNiYjdjNzQ3LTIwZTYtNDEyYy1iZDQ4LTdkMDIxMzFjNjFhYlwvZGZ6N2JmcC1iNTg4MzBiMy00MzI2LTQ2YTQtODgyNy05MmI5YmVkZWNiNTcuanBnIiwid2lkdGgiOiI8PTEwMjQifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6aW1hZ2Uub3BlcmF0aW9ucyJdfQ.C9nq40E5DdQBW6kOGR5Yzevlf6Kjor77pCzwyPGmD6E"
+  },
+  {
+    "title": "Elden Ring",
+    "description": "Dark fantasy RPG from the makers of Dark Souls.",
+    "platform": "PC",
+    "genre": "RPG",
+    "price": 59.99,
+    "stock": 50,
+    "category": "RPG",
+    "coverImage": "https://wallpaperbat.com/img/43387659-wallpaper-elden-ring.jpg"
+  },
+  {
+    "title": "Forza Horizon 5",
+    "description": "Open-world racing across Mexico.",
+    "platform": "Xbox",
+    "genre": "Racing",
+    "price": 49.99,
+    "stock": 75,
+    "category": "Racing",
+    "coverImage": "https://images3.alphacoders.com/132/thumbbig-1323876.webp"
+  },
+  {
+    "title": "God of War Ragnarök",
+    "description": "Norse mythology action adventure.",
+    "platform": "PlayStation",
+    "genre": "Adventure",
+    "price": 69.99,
+    "stock": 65,
+    "category": "Adventure",
+    "coverImage": "https://images5.alphacoders.com/134/thumbbig-1344719.webp"
+  },
+  {
+    "title": "Civilization VI",
+    "description": "Turn-based strategy to build an empire.",
+    "platform": "PC",
+    "genre": "Strategy",
+    "price": 29.99,
+    "stock": 100,
+    "category": "Strategy",
+    "coverImage": "https://images4.alphacoders.com/819/thumbbig-819105.webp"
+  },
+  {
+    "title": "Minecraft",
+    "description": "Sandbox building and survival game.",
+    "platform": "PC",
+    "genre": "Adventure",
+    "price": 26.95,
+    "stock": 150,
+    "category": "Adventure",
+    "coverImage": "https://images3.alphacoders.com/135/thumbbig-1353838.webp"
+  },
+  {
+    "title": "Fortnite",
+    "description": "Online battle royale action.",
+    "platform": "PC",
+    "genre": "Action",
+    "price": 0,
+    "stock": 9999,
+    "category": "Action",
+    "coverImage": "https://images4.alphacoders.com/889/thumbbig-889823.webp"
+  },
+  {
+    "title": "Final Fantasy XV",
+    "description": "Fantasy open-world RPG.",
+    "platform": "Xbox",
+    "genre": "RPG",
+    "price": 39.99,
+    "stock": 45,
+    "category": "RPG",
+    "coverImage": "https://images3.alphacoders.com/716/thumbbig-716081.webp"
+  },
+  {
+    "title": "Need for Speed Heat",
+    "description": "High-speed street racing.",
+    "platform": "PC",
+    "genre": "Racing",
+    "price": 39.99,
+    "stock": 80,
+    "category": "Racing",
+    "coverImage": "https://images6.alphacoders.com/112/thumbbig-1127180.webp"
+  },
+  {
+    "title": "StarCraft II",
+    "description": "Sci-fi military strategy.",
+    "platform": "PC",
+    "genre": "Strategy",
+    "price": 19.99,
+    "stock": 90,
+    "category": "Strategy",
+    "coverImage": "https://images8.alphacoders.com/499/thumbbig-499258.webp"
+  },
+  {
+    "title": "Uncharted 4",
+    "description": "Treasure-hunting cinematic adventure.",
+    "platform": "PlayStation",
+    "genre": "Adventure",
+    "price": 29.99,
+    "stock": 55,
+    "category": "Adventure",
+    "coverImage": "https://images3.alphacoders.com/109/thumbbig-1091263.webp"
+  },
+  {
+    "title": "Halo Infinite",
+    "description": "Sci-fi action shooter.",
+    "platform": "Xbox",
+    "genre": "Action",
+    "price": 59.99,
+    "stock": 75,
+    "category": "Action",
+    "coverImage": "https://images.alphacoders.com/132/thumbbig-1326635.webp"
+  }
+]
