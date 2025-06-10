@@ -16,7 +16,7 @@ export const fetchGames = async (filters) => {
 
   const limit = 5;
 
-  const page = !filters.page ? 1 : filters.page;
+  const page = filters.page || 1;
   const totalGames = await Game.countDocuments(query);
   const skip = (page - 1) * limit;
 
