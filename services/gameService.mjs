@@ -1,6 +1,7 @@
 import Game from "../models/Game.mjs";
 import "../models/Category.mjs";
 import "../models/Review.mjs";
+import AppError from "../utils/appError.mjs";
 
 export const fetchGames = async (filters) => {
   const query = {};
@@ -13,16 +14,33 @@ export const fetchGames = async (filters) => {
     if (filters.maxPrice) query.price.$lte = parseFloat(filters.maxPrice);
   }
 
-  const games = await Game.find(query).populate("category");
+  const limit = 5;
 
-  return games.map((game) => ({
-    ID: game._id,
-    title: game.title,
-    platform: game.platform,
-    price: game.price,
-    genre: game.genre,
-    category: game.category?.name || null,
-  }));
+  const page = !filters.page ? 1 : filters.page;
+  const totalGames = await Game.countDocuments(query);
+  const skip = (page - 1) * limit;
+
+  if (page > Math.ceil(totalGames / limit))
+    throw new AppError("page not found", 404);
+
+  const games = await Game.find(query)
+    .populate("category")
+    .skip(skip)
+    .limit(limit);
+
+  return {
+    total: totalGames,
+    page,
+    pageSize: limit,
+    games: games.map((game) => ({
+      ID: game._id,
+      title: game.title,
+      platform: game.platform,
+      price: game.price,
+      genre: game.genre,
+      category: game.category?.name || null,
+    })),
+  };
 };
 
 export const fetchGameById = async (id) => {

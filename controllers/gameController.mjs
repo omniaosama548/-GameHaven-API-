@@ -1,20 +1,17 @@
 import { fetchGameById, fetchGames } from "../services/gameService.mjs";
+import AppError from "../utils/appError.mjs";
+import catchAsync from "../utils/catchAsync.mjs";
 
-export const getGames = async (req, res, next) => {
-  try {
-    const games = await fetchGames(req.query);
-    res.json(games);
-  } catch (err) {
-    next(err);
-  }
-};
+export const getGames = catchAsync(async (req, res, next) => {
+  const games = await fetchGames(req.query);
+  res.json(games);
 
-export const getGameById = async (req, res, next) => {
-  try {
-    const game = await fetchGameById(req.params.id);
-    if (!game) return res.status(404).json({ message: "Game not found" });
-    res.json(game);
-  } catch (err) {
-    next(err);
-  }
-};
+  next(new AppError("somthing went wrong, please try again later", 500));
+});
+
+export const getGameById = catchAsync(async (req, res, next) => {
+  const game = await fetchGameById(req.params.id);
+  if (!game) return next(new AppError("Game not found", 404));
+  res.json(game);
+  next(new AppError("somthing went wrong, please try again later", 500));
+});
