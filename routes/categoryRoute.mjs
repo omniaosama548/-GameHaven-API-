@@ -5,7 +5,7 @@ import { isAuthorized } from '../middlewares/roleMiddleware.mjs';
 const router = express.Router();
 //  Get all categories (any logged in user)
 router.get("/",isAuthenticated,categoryController.getAllCategories)
-// Get single category by ID
+// Get single category by ID(any logged in user)
 router.get("/:id", isAuthenticated, categoryController.getCategoryById);
 // Create new category (admin only)
 router.post("/", isAuthenticated, isAuthorized("admin"), categoryController.createCategory);
