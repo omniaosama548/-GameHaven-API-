@@ -3,6 +3,7 @@ import dotenv from "dotenv";
 import connectDB from "./config/db.mjs";
 import morgan from "morgan";
 import authRouter from "./routes/authRoute.mjs";
+import categoryRoutes from "./routes/categoryRoute.mjs";
 import globalErrorHandler from "./controllers/errorController.mjs";
 
 dotenv.config();
@@ -13,6 +14,7 @@ app.use(express.json());
 app.use(morgan("dev"));
 app.use(express.urlencoded({ extended: true }));
 app.use("/api/auth", authRouter);
+app.use("/api/categories",categoryRoutes);
 
 app.use(globalErrorHandler);
 
