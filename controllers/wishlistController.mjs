@@ -17,7 +17,9 @@ export const addWishlistItem = catchAsync(async (req, res, next) => {
     return next(new AppError("Game ID is required", 400));
   }
   const wishlist = await wishlistService.addToWishlist(req.user._id, gameId);
-  res.status(200).json(wishlist);
+  res.status(200).json({
+     message:"game add successfully",
+    wishlist});
 });
 
 export const removeWishlistItem = catchAsync(async (req, res, next) => {
@@ -31,7 +33,7 @@ export const removeWishlistItem = catchAsync(async (req, res, next) => {
   }
 
   res.status(200).json({
-    message:"game deleted successfully",
+   
     data:wishlist
   });
 });

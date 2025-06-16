@@ -21,12 +21,16 @@ export const deleteReview = catchAsync(async (req, res, next) => {
   const { reviewId } = req.params;
   const deleted = await reviewService.deleteReview(reviewId, req.user._id);
   if (!deleted) return next(new AppError("Review not found or not authorized", 404));
-  res.status(204).json(null);
+  res.status(200).json({
+     message:"review deleted successfully"
+});
 });
 
 export const updateReview = catchAsync(async (req, res, next) => {
   const { reviewId } = req.params;
   const updated = await reviewService.updateReview(reviewId, req.user._id, req.body);
   if (!updated) return next(new AppError("Review not found or not authorized", 404));
-  res.status(200).json(updated);
+  res.status(200).json({
+    message:"review updated successfully",
+    updated});
 });
