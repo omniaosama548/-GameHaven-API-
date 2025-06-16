@@ -5,8 +5,10 @@ import AppError from "../utils/appError.mjs";
 
 export const fetchGames = async (filters) => {
   const query = {};
-  if (filters.genre) query.genre = filters.genre;
-  if (filters.platform) query.platform = filters.platform;
+  if (filters.genre)
+    query.genre = { $regex: `^${filters.genre}$`, $options: "i" };
+  if (filters.platform)
+    query.platform = { $regex: `^${filters.platform}$`, $options: "i" };
   if (filters.title) query.title = { $regex: filters.title, $options: "i" };
   if (filters.minPrice || filters.maxPrice) {
     query.price = {};
@@ -19,6 +21,15 @@ export const fetchGames = async (filters) => {
   const page = filters.page || 1;
   const totalGames = await Game.countDocuments(query);
   const skip = (page - 1) * limit;
+
+  if (totalGames === 0) {
+    return {
+      total: 0,
+      page,
+      pageSize: limit,
+      games: [],
+    };
+  }
 
   if (page > Math.ceil(totalGames / limit))
     throw new AppError("page not found", 404);
