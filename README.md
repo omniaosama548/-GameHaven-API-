@@ -25,7 +25,9 @@ A modular and scalable **Node.js + Express** backend for an e-commerce platform 
 ## 📦 Installation
 
 git clone https://github.com/omniaosama548/-GameHaven-API-
+
 cd -GameHaven-API-
+
 npm install
 
 ## 🔐 Environment Variables
@@ -33,18 +35,24 @@ npm install
 Create a .env file in the root directory with the following:
 
 PORT=9093
+
 MONGO_URI=your_mongo_db_connection_string
+
 JWT_SECRET=your_jwt_secret
 
 
 ## 🚀 Running the Server
+
 To start the development server:
 
 npm run dev
+
 or
+
 node server.mjs
 
 ## 🔗 API Endpoints
+
 | Method | Route                | Description                  |
 | ------ | -------------------- | ---------------------------- |
 | POST   | `/api/auth/register` | User Registration            |
@@ -58,6 +66,7 @@ node server.mjs
 
 
 ## ⚠️ Error Handling
+
 All unhandled errors are processed by the centralized error handler located in:
 
 controllers/errorController.mjs
