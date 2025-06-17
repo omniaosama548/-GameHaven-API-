@@ -6,7 +6,7 @@ import connectDB from "../config/db.mjs";
 
 let token;
 let createdReviewId;
-let testGameId = "68484b29730f11ec72f99132";
+let testGameId = "68484b29730f11ec72f9912f";
 
 describe("Review Endpoints", function () {
   this.timeout(10000);

@@ -8,10 +8,10 @@ let token;
 let gameId = "68484b29730f11ec72f9912f"; // The Witcher 3: Wild Hunt
 
 describe("Cart Endpoints", function () {
-  this.timeout(20000); // وقت كلي احتياطي
+  this.timeout(20000);
 
   before(async function () {
-    this.timeout(15000); // وقت مخصص لـ before فقط
+    this.timeout(15000);
 
     await connectDB();
 

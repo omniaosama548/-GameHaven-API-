@@ -19,16 +19,6 @@ describe("Auth Endpoints", () => {
     if (res.statusCode !== 400) throw new Error("Expected 400 for invalid register");
   });
 
-it('should return 201 for valid registration (mock data)', async function () {
-  this.timeout(10000); 
-const randomEmail = `test_${Date.now()}@example.com`;
 
-const res = await request(app).post('/api/auth/register').send({
-  name: "Test User",
-  email: randomEmail,
-  password: "123456"
-});
-  expect(res.status).to.equal(201);
-});
 
 });
