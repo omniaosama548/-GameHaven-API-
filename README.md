@@ -1,20 +1,20 @@
-# 🎮 GameHaven API – Store Backend
+#  GameHaven API – Store Backend
 
 A modular and scalable **Node.js + Express** backend for an e-commerce platform focused on games. This API handles authentication, categories, game management, shopping cart, orders, wishlist, reviews, and admin operations.
 
-## ✨ Features
+##  Features
 
-- 🔐 User Authentication (Register, Login, JWT)  
-- 🛠️ Admin Panel APIs  
-- 🗂️ Product Categories & Game Management  
-- 🛒 Shopping Cart Functionality  
-- 📦 Order Processing  
-- ❤️ Wishlist Management  
-- ⭐ Game Reviews  
-- ❌ Centralized Error Handling  
-- 📁 Modular Routing  
+-  User Authentication (Register, Login, JWT)  
+-  Admin Panel APIs  
+-  Product Categories & Game Management  
+-  Shopping Cart Functionality  
+-  Order Processing  
+-  Wishlist Management  
+-  Game Reviews  
+-  Centralized Error Handling  
+-  Modular Routing  
 
-## 🧰 Tech Stack
+##  Tech Stack
 
 - **Node.js**  
 - **Express**  
@@ -22,7 +22,7 @@ A modular and scalable **Node.js + Express** backend for an e-commerce platform 
 - **dotenv**  
 - **morgan** (HTTP request logger)  
 
-## 📦 Installation
+##  Installation
 
 git clone https://github.com/omniaosama548/-GameHaven-API-
 
@@ -30,7 +30,7 @@ cd -GameHaven-API-
 
 npm install
 
-## 🔐 Environment Variables
+## Environment Variables
 
 Create a .env file in the root directory with the following:
 
@@ -41,7 +41,7 @@ MONGO_URI=your_mongo_db_connection_string
 JWT_SECRET=your_jwt_secret
 
 
-## 🚀 Running the Server
+##  Running the Server
 
 To start the development server:
 
@@ -65,7 +65,7 @@ node server.mjs
 | CRUD   | `/api/reviews`       | Submit & View Game Reviews   |
 
 
-## ⚠️ Error Handling
+##  Error Handling
 
 All unhandled errors are processed by the centralized error handler located in:
 
