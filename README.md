@@ -71,5 +71,7 @@ All unhandled errors are processed by the centralized error handler located in:
 
 controllers/errorController.mjs
 
+--Email
+anaomnia47@gmail.com
 
 
