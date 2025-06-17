@@ -1,67 +1,66 @@
--GameHaven-API- Store Backend API
-A modular and scalable Node.js + Express backend for an e-commerce platform focused on games. This API handles authentication, categories, game management, shopping cart, orders, wishlist, reviews, and admin operations.
+# 🎮 GameHaven API – Store Backend
 
-**Features**
-User Authentication (Register, Login, JWT)
+A modular and scalable **Node.js + Express** backend for an e-commerce platform focused on games. This API handles authentication, categories, game management, shopping cart, orders, wishlist, reviews, and admin operations.
 
-Admin Panel APIs
+## ✨ Features
 
-Product Categories & Game Management
+- 🔐 User Authentication (Register, Login, JWT)  
+- 🛠️ Admin Panel APIs  
+- 🗂️ Product Categories & Game Management  
+- 🛒 Shopping Cart Functionality  
+- 📦 Order Processing  
+- ❤️ Wishlist Management  
+- ⭐ Game Reviews  
+- ❌ Centralized Error Handling  
+- 📁 Modular Routing  
 
-Shopping Cart Functionality
+## 🧰 Tech Stack
 
-Order Processing
+- **Node.js**  
+- **Express**  
+- **MongoDB** (Recommended with Mongoose)  
+- **dotenv**  
+- **morgan** (HTTP request logger)  
 
-Wishlist Management
-
-Game Reviews
-
-Centralized Error Handling
-
-Modular Routing
-
-**Tech Stack**
-Node.js
-
-Express
-
-MongoDB (recommended for use with Mongoose in routes)
-
-dotenv
-
-morgan (HTTP request logger)
-
-**Installation**
+## 📦 Installation
 
 git clone https://github.com/omniaosama548/-GameHaven-API-
 cd -GameHaven-API-
 npm install
 
-**Environment Variables**
-Create a .env file in the root with:
+## 🔐 Environment Variables
+
+Create a .env file in the root directory with the following:
 
 PORT=9093
 MONGO_URI=your_mongo_db_connection_string
 JWT_SECRET=your_jwt_secret
 
-**Running the Server**
+
+## 🚀 Running the Server
+To start the development server:
 
 npm run dev
-
-Or
-
+or
 node server.mjs
 
-**API Endpoints**
-Route Description
-/api/auth/register Authentication (register)
-/api/auth/login Authentication (login)
-/api/categories Game categories
-/api/games CRUD for games
-/api/cart Shopping cart operations
-/api/orders Place and manage orders
-/api/wishlist User wishlist management
-/api/reviews Submit and get game reviews
+## 🔗 API Endpoints
+| Method | Route                | Description                  |
+| ------ | -------------------- | ---------------------------- |
+| POST   | `/api/auth/register` | User Registration            |
+| POST   | `/api/auth/login`    | User Login                   |
+| GET    | `/api/categories`    | Fetch Game Categories        |
+| CRUD   | `/api/games`         | Game Management (Admin)      |
+| CRUD   | `/api/cart`          | Shopping Cart Operations     |
+| CRUD   | `/api/orders`        | Order Placement & Management |
+| CRUD   | `/api/wishlist`      | Wishlist Management          |
+| CRUD   | `/api/reviews`       | Submit & View Game Reviews   |
 
-**Error Handling**
-Handled globally by globalErrorHandler in controllers/errorController.mjs.
+
+## ⚠️ Error Handling
+All unhandled errors are processed by the centralized error handler located in:
+
+controllers/errorController.mjs
+
+
+
