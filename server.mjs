@@ -1,11 +1,11 @@
 // server.mjs
-import app from './app.mjs';
-import connectDB from './config/db.mjs';
-import dotenv from 'dotenv';
+import app from "./app.mjs";
+import connectDB from "./config/db.mjs";
+import dotenv from "dotenv";
 
 dotenv.config();
 
-const PORT = process.env.PORT || 8080;
+const PORT = process.env.PORT || 9093;
 
 const startServer = async () => {
   try {
@@ -20,4 +20,3 @@ const startServer = async () => {
 };
 
 startServer();
-
